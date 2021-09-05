@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#body {
+	font-family: arial;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: green;
+	transition: 0.5s;
+}
+
+.Animated-Menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+	background-color: #fff;
+	border-radius: 40px;
+	padding: 10px 10px 3px 10px;
+}
+
+.Animated-Menu ul {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.Animated-Menu ul li {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	margin: 0px 3px;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+.Animated-Menu ul li span {
+	position: absolute;
+	font-size: 22px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #333;
+}
+
+#home:hover {
+	background-color: #E0344F;
+	color: #fff;
+}
+#user:hover {
+	background-color: #363AB2;
+	color: #fff;
+}
+#comment:hover {
+	background-color: #0DA15B;
+	color: #fff;
+}
+#question:hover {
+	background-color: #0D99CA;
+	color: #fff;
+}
+#cog:hover {
+	background-color: #FDA601;
+	color: #fff;
+}
+
+#home:hover span {
+	color: #fff;
+}
+#user:hover span {
+	color: #fff;
+}
+#comment:hover span {
+	color: #fff;
+}
+#question:hover span {
+	color: #fff;
+}
+#cog:hover span {
+	color: #fff;
+}
+
+
+.hover-div {
+	width: 70px;
+	height: 40px;
+	background-color: #fff;
+	position: absolute;
+	top: -70px;
+	left: -10px;
+	border-radius: 5px;
+	transition: 0.3s;
+	display: none;
+}
+.big-div {
+	width: 85px;
+}
+.hover-div:before {
+	position: absolute;
+	content: '';
+	bottom: -7px;
+	left: 40%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	transform: rotate(45deg);
+}
+.hover-div p {
+	text-align: center;
+	font-size: 16px !important;
+	color: #333;
+	line-height: 40px;
+	font-weight: 600;
+}
+
+.Animated-Menu ul li:hover .hover-div {
+	display: block;
+}
