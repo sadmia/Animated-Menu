@@ -1,2 +1,1 @@
-# Animated-Menu
-Animated Menu Indicator using CSS &amp; Javascript | CSS Hover indicator
+Live View Link : https://sadmia.github.io/Animated-Menu/
